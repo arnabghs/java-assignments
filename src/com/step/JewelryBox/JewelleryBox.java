@@ -1,10 +1,10 @@
-package com.step.experiment;
+package com.step.JewelryBox;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JewelryBoxTest {
+public class JewelleryBox {
   @Test
   void name() {
     JewelryBox _5thLevelBox = new JewelryBox();
@@ -22,4 +22,3 @@ class JewelryBoxTest {
     assertEquals(2, _1stLevelBox.getJewelryCount());
   }
 }
-

@@ -1,4 +1,4 @@
-package com.step.experiment;
+package com.step.JewelryBox;
 
 public class Jewelry {
   private String name;

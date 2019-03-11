@@ -6,23 +6,25 @@ import java.util.NoSuchElementException;
 
 public class Iterator {
 
-  public static void main(String[] args) {
-    List<Integer> list = new ArrayList<>();
-    list.add(3);
-    list.add(4);
-    list.add(5);
-    list.add(6);
-    list.add(7);
-    list.add(8);
-    Iterator iterator = new Iterator(list);
-    System.out.println(iterator.next());
-    System.out.println(iterator.next());
-    System.out.println(iterator.next());
-    System.out.println(iterator.next());
-    System.out.println(iterator.next());
-    System.out.println(iterator.next());
-    System.out.println(iterator.hasNext());
-  }
+//  public static void main(String[] args) {
+//    List<Integer> list = new ArrayList<>();
+//    list.add(3);
+//    list.add(4);
+//    list.add(5);
+//    list.add(6);
+//    list.add(7);
+//    list.add(8);
+//    Iterator iterator = new Iterator(list);
+//
+//    System.out.println(iterator.hasNext());
+//    System.out.println(iterator.next());
+//    System.out.println(iterator.next());
+//    System.out.println(iterator.next());
+//    System.out.println(iterator.next());
+//    System.out.println(iterator.next());
+//    System.out.println(iterator.next());
+//    System.out.println(iterator.hasNext());
+//  }
 
   private int lastAccessedIndex;
   private List list;
@@ -36,7 +38,7 @@ public class Iterator {
     return (this.list.size() - lastAccessedIndex > 1);
   }
 
-  public int next() {
+  public Integer next() {
     if (hasNext()) {
       int value = (int) this.list.get(lastAccessedIndex + 1);
       this.lastAccessedIndex++;
